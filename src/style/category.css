@@ -1,0 +1,51 @@
+.category {
+   max-width: 500px;
+   margin: 1.7rem auto;
+}
+
+.category form {
+   width: 100%;
+   margin-bottom: 1.2rem;
+}
+
+.category form label {
+   display: block;
+   font-weight: 700;
+   letter-spacing: 1.2px;
+   text-transform: uppercase;
+   margin-bottom: 1rem;
+}
+
+.category form input,
+.category form button {
+   height: 35px;
+   border: none;
+   oytline: none;
+   border-bottom: 1px solid #555;
+}
+
+.category form input:focus {
+   outline: none;
+}
+
+.category form input {
+   flex: 1;
+}
+
+.category form button {
+   width: 70px;
+   background-color: #555;
+   color: white;
+   margin-left: 10px;
+}
+
+.category_row {
+   width: 100%;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   padding: 10px;
+   margin-bottom: 1rem;
+   border: 1px solid #ccc;
+   cursor: pointer;
+}

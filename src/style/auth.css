@@ -1,0 +1,40 @@
+.auth_page {
+   width: 100%;
+   padding: 2.5rem 0;
+   display: flex;
+   background-color: #fdfdfd;
+   justify-content: center;
+}
+
+.auth_page .auth_box {
+   background-color: #ffffff;
+   max-width: 400px;
+   width: 100%;
+   border: 1px solid #ddd;
+   padding: 2.7rem 1.7rem;
+}
+
+.pass {
+   position: relative;
+}
+
+.pass small {
+   position: absolute;
+   top: 50%;
+   right: 10px;
+   transform: translateY(-50%);
+   opacity: 0.5;
+   cursor: pointer;
+}
+
+.auth_page a {
+   text-decoration: none;
+}
+
+.auth_page a:hover {
+   text-decoration: underline;
+}
+
+.auth_page button:hover {
+   opacity: 0.8;
+}
