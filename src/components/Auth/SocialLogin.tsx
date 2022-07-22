@@ -27,7 +27,7 @@ const SocialLogin = () => {
             onSuccess={onSuccess}
          />
          <FacebookLogin
-            appId="549602096794210"
+            appId="1400497563753220"
             onSuccess={onFbSuccess}
          />
       </div>
