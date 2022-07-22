@@ -7,7 +7,9 @@ const SocialLogin = () => {
    const dispatch = useDispatch();
    // Google
    const onSuccess = (googleUser: GoogleLoginResponse) => {
-      const id_token = googleUser.getAuthResponse().id_token;
+      console.log(googleUser);
+      
+      const id_token = googleUser.getAuthResponse().id_token;      
       dispatch(googlelogin(id_token));
    }
 
@@ -20,7 +22,7 @@ const SocialLogin = () => {
    return (
       <div className='my-2'>
          <GoogleLogin
-            client_id='700427633806-ut7c8e5d2377r9q9o1ev5eu3kak37fhs.apps.googleusercontent.com'
+            client_id='393258030309-nvs8hgp1j0urrpn59fgfg2qllpngn2ij.apps.googleusercontent.com'
             cookiepolicy='single_host_origin'
             onSuccess={onSuccess}
          />

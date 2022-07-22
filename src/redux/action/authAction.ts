@@ -123,7 +123,8 @@ export const googlelogin = (id_token: string) => {
             type: ALERT,
             payload: { loading: true }
          })
-         const res = await postApi('google_login', {id_token});
+      const res = await postApi('google_login', {id_token});
+
          console.log(res);
          dispatch({
             type: AUTH,

@@ -43,7 +43,7 @@ export const createBlog = (blog: IBlog, token: string) => {
       } catch(err: any) {
          dispatch({
             type: ALERT,
-            payload: { errors: err.message}
+            payload: { errors: err.response.data.msg}
          })
       }
    }
@@ -70,7 +70,7 @@ export const getHomeBlogs = () => {
       } catch(err: any) {
          dispatch({
             type: ALERT,
-            payload: { errors: err.message}
+            payload: { errors: err.response.data.msg}
          })
       }
    }
@@ -101,7 +101,7 @@ export const getBlogsByCategoryId = (categoryId: string, search: string) => {
       } catch(err: any) {
          dispatch({
             type: ALERT,
-            payload: { errors: err.message}
+            payload: { errors: err.response.data.msg}
          })
       }
    }
@@ -133,7 +133,7 @@ export const getBlogsByUser = (id: string, search?: string) => {
       } catch(err: any) {
          dispatch({
             type: ALERT,
-            payload: { errors: err.message}
+            payload: { errors: err.response.data.msg}
          })
       }
    }
@@ -166,7 +166,7 @@ export const updateBlog = (blog: IBlog, token: string) => {
       } catch(err: any) {
          dispatch({
             type: ALERT,
-            payload: { errors: err.message}
+            payload: { errors: err.response.data.msg}
          })
       }
    }
@@ -195,7 +195,7 @@ export const deleteBlog = (blog: IBlog, token: string) => {
       } catch(err: any) {
          dispatch({
             type: ALERT,
-            payload: { errors: err.message}
+            payload: { errors: err.response.data.msg}
          })
       }
    }

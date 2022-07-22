@@ -11,6 +11,8 @@ import { getCategory } from './redux/action/categoryAction'
 import { getHomeBlogs } from './redux/action/blogAction'
 import io from  'socket.io-client'
 import SocketClient from './SocketClient'
+
+import { API_URL } from './utils/config'
 const App = () => {
   gapi.load("client:auth2", () => {
     gapi.client.init({
@@ -28,7 +30,7 @@ const App = () => {
 
 
   useEffect(() => {
-    const socket = io();
+    const socket = io(API_URL);
     dispatch({ type: 'SOCKET', payload: socket })
     return () => {
       socket.close()

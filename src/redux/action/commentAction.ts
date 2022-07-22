@@ -25,7 +25,7 @@ export const createComment = (data: IComment, token: string) => {
          dispatch({
             type: ALERT,
             payload: {
-               errors: err.message
+               errors: err.response.data.msg
             }
          })
       }
@@ -49,7 +49,7 @@ export const getComments = (id: string, num: number) => {
       } catch(err: any) {
          dispatch({
             type: ALERT,
-            payload: { errors: err.message }
+            payload: { errors: err.response.data.msg }
          })
       }
    }
@@ -73,7 +73,7 @@ export const replyComment = (data: IComment, token: string) => {
       } catch(err: any) {
          dispatch({
             type :ALERT,
-            payload: { errors: err.message }
+            payload: { errors: err.response.data.msg }
          })
       }
    }
@@ -95,7 +95,7 @@ export const updateComment = (data: IComment, token: string) => {
       } catch(err: any) {
          dispatch({
             type: ALERT,
-            payload: { errors: err.message }
+            payload: { errors: err.response.data.msg }
          })
       }
    }
@@ -116,7 +116,7 @@ export const deleteCommnet = (data: IComment, token: string) => {
       } catch(err : any) {
          dispatch({
             type: ALERT,
-            payload: { errors: err.message }
+            payload: { errors: err.response.data.msg }
          })
       }
    }

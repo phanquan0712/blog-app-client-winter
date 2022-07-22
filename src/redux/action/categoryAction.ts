@@ -57,7 +57,7 @@ export const getCategory = () => {
       } catch (err: any) {
          dispatch({
             type: ALERT,
-            payload: { errors: err.message }
+            payload: { errors: err.response.data.msg }
          })
       }
    }
